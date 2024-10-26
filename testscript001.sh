@@ -17,7 +17,6 @@ do
         done
 
         ave=$(echo "$sum / 5" | bc)
-        echo ${request} >> ${FILE} 
-        ${ave} >> ${FILE}     
+        echo "${request} ${ave}" >> ${FILE}     
 done
 
