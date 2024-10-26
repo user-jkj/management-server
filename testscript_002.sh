@@ -1,7 +1,7 @@
 #!/bin/sh
 # testscript001.sh
 
-URL=http://127.0.0.1/data/PIA18033~orig.jpg
+URL=http://127.0.0.1/data/img/PIA18033~orig.jpg
 FILE=testdata2.dat
 
 rm -f ${FILE}
