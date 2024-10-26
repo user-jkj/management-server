@@ -14,6 +14,6 @@ do
         sum=$(echo "$sum + $(ab -c 10 -n ${request} ${URL} | grep 'Requests per second' | sed -r 's/.*( +)([0-9]+\.[0-9][0-9]) .*/\2/')" | bc)
     done
 
-    ave=$(echo "scale=2; $sum / 5" | bc)
+    ave=$(echo "$sum / 5" | bc)
     echo "${request} ${ave}" >> ${FILE}
 done
