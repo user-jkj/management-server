@@ -12,7 +12,9 @@ do
         ave = 0
         for i in `seq 5`
         do
-             sum = $(echo "$sum + $(ab -c 10 -n ${request} ${URL} | grep 'Requests per second' | sed -r 's/.*( +)([0-9]+\.[0-9][0-9]) .*/\2/')" |bc)
+                resolt = $(ab -c 10 -n ${request} ${URL} | grep 'Requests per second' | sed -r 's/.*( +)([0-9]+\.[0-9][0-9]) .*/\2/')
+                
+                sum = $(echo "$sum + $resolt "|bc)
         done
 
         ave = $(echo "$sum / 5" | bc)
