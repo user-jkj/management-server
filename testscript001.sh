@@ -2,7 +2,7 @@
 #testscript1.sh
 
 URL=http://127.0.0.1/data/img/PIA18033~orig.jpg
-FILE=testdata1.dat
+FILE=test1.dat
 
 rm -f ${FILE}
 
