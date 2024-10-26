@@ -6,7 +6,7 @@ FILE=testdata2.dat
 
 rm -f ${FILE}
 
-for request in 10 20 30 40 50 100 200 300 400 500 600 700 900 1000
+for request in 50 100 200 300 400 500 600 700 900 1000
 do
     sum=0
     for i in $(seq 5)
